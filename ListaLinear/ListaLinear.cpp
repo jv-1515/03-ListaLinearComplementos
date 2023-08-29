@@ -1,3 +1,4 @@
+//Joao Victor Alves da Silva
 
 #include <iostream>
 using namespace std;
@@ -105,7 +106,7 @@ void inserirElemento()
 
 		if (pos != -1)
 		{
-			cout << "Elemento já esta na lista" << endl;
+			cout << "Elemento jÃ¡ esta na lista!" << endl;
 		}
 		else
 		{
@@ -122,7 +123,25 @@ void inserirElemento()
 
 void excluirElemento()
 {
+	int valorEx;
+	cout << "Digite o elemento que queira excluir :) :";
+	cin >> valorEx;
+	
+	int pos = posicaoElemento(valorEx);
+	int pValor = (nElementos - 1);
 
+	if (pos != -1) {
+
+		for (int cont = pos; cont < pValor; cont++) {
+
+			lista[pos] = lista[pos + 1];
+		}
+		nElementos = nElementos--;
+	}
+	else
+	{
+		cout << "O elemento digitado nao foi encontrado :("<< endl;
+	}
 
 }
 
