@@ -8,3 +8,4 @@ Faça um fork deste repositorio e implemente a função excluirElemento
 * Se encontrado exclue o elemento e atualiza a quantidade de elementos na lista
 * Se não econtrado exibe "elemento não encontrado" 
 
+joao.silva681@fatec.sp.gov.br
